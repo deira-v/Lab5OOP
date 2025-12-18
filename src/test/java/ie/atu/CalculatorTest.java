@@ -72,7 +72,7 @@ public class CalculatorTest {
     @Test
     public void testDiv_Failure()
     {
-        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.sub(Integer.MIN_VALUE, 0));
+        Exception ex = assertThrows(ArithmeticException.class, ()-> calc.div(10, 0));
         assertEquals("Number cannot be divided by 0", ex.getMessage());
     }
 
